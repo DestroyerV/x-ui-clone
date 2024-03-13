@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="shortcut icon" href="logo-white.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script
+      src="https://kit.fontawesome.com/59873b0e8c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-black text-white">
+    <div class="box-border flex shrink-0">
+      <div class="first sticky top-0 h-screen md:w-[25%]">
+        <div class="sidebar flex flex-col items-center gap-2 font-semibold">
+          <div class="flex flex-col items-start justify-center gap-1 text-2xl">
+            <div class="logo my-4 ml-5 w-8 cursor-pointer">
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"
+              >
+                <g>
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                    fill="white"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div
+              class="flex cursor-pointer items-center gap-2 rounded-full px-5 py-3 hover:bg-gray-900/50"
+            >
+              <span class="material-symbols-outlined"> home </span>
+              <span class="hidden md:inline-block"> Home </span>
+            </div>
+            <div
+              class="flex cursor-pointer items-center gap-2 rounded-full px-5 py-3 hover:bg-gray-900/50"
+            >
+              <span class="material-symbols-outlined"> search </span>
+              <span class="hidden md:inline-block"> Search </span>
+            </div>
+            <div
+              class="flex cursor-pointer items-center gap-2 rounded-full px-5 py-3 hover:bg-gray-900/50"
+            >
+              <span class="material-symbols-outlined"> notifications </span>
+              <span class="hidden md:inline-block"> Notifications </span>
+            </div>
+            <div
+              class="flex cursor-pointer items-center gap-2 rounded-full px-5 py-3 hover:bg-gray-900/50"
+            >
+              <span class="material-symbols-outlined"> mail </span>
+              <span class="hidden md:inline-block"> Messages </span>
+            </div>
+            <div
+              class="flex cursor-pointer items-center gap-2 rounded-full px-5 py-3 hover:bg-gray-900/50"
+            >
+              <span class="material-symbols-outlined"> comment </span>
+              <span class="hidden md:inline-block"> Grok </span>
+            </div>
+            <div
+              class="flex cursor-pointer items-center gap-2 rounded-full px-5 py-3 hover:bg-gray-900/50"
+            >
+              <span class="material-symbols-outlined"> list_alt </span>
+              <span class="hidden md:inline-block"> Lists </span>
+            </div>
+            <div
+              class="flex cursor-pointer items-center gap-2 rounded-full px-5 py-3 hover:bg-gray-900/50"
+            >
+              <span class="material-symbols-outlined"> person </span>
+              <span class="hidden md:inline-block"> Profile </span>
+            </div>
+            <div
+              class="flex cursor-pointer items-center gap-2 rounded-full px-5 py-3 hover:bg-gray-900/50"
+            >
+              <span class="material-symbols-outlined"> pending </span>
+              <span class="hidden md:inline-block"> More </span>
+            </div>
+          </div>
+          <button
+            class="mt-4 rounded-full bg-cyan-500 p-2.5 hover:bg-cyan-600 md:hidden"
+          >
+            <i class="fa-solid fa-feather fa-xl"></i>
+          </button>
+          <button
+            class="post hidden rounded-full bg-cyan-500 px-24 py-3 hover:bg-cyan-600 md:block"
+          >
+            Post
+          </button>
+          <div
+            class="account relative -bottom-8 flex cursor-pointer items-center rounded-full px-2 py-3 hover:bg-gray-900 md:gap-4"
+          >
+            <span class="dp"
+              ><img
+                class="w-10 rounded-full"
+                src="assets/images/profile-photo.jpg"
+                alt="vaibhav"
+            /></span>
+            <span class="id"
+              ><p class="hidden md:block">Vaibhav mishra</p>
+              <p class="hidden text-gray-600 md:block">@Destroyer__V</p></span
+            >
+            <span class="hidden md:inline-block">
+              <span class="material-symbols-outlined"> more_horiz </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="second w-full border-x-2 border-gray-700 md:w-3/4 min-[1300px]:w-6/12"
+      >
+        <div
+          class="hearder sticky top-0 flex border-b-2 border-gray-700 p-3 backdrop-blur-md"
+        >
+          <div
+            class="for flex w-1/2 cursor-pointer justify-center font-semibold"
+          >
+            For you
+          </div>
+          <div
+            class="underlin absolute bottom-0 left-[15%] w-16 rounded-full border-[3px] border-blue-400 md:left-[9.2rem]"
+          ></div>
+          <div
+            class="following flex w-1/2 cursor-pointer justify-center font-semibold text-gray-600"
+          >
+            Following
+          </div>
+          <div class="setting mx-2 py-0.5">
+            <span class="material-symbols-outlined cursor-pointer">
+              settings
+            </span>
+          </div>
+        </div>
+        <div class="posts">
+          <div class="tweet flex gap-3 border-b-2 border-gray-700 p-4">
+            <div class="dp w-10">
+              <img
+                src="assets/images/profile-photo.jpg"
+                alt="dp"
+                class="logo w-10 rounded-full"
+              />
+            </div>
+            <div class="inputs flex w-full flex-col gap-4">
+              <div class="text">
+                <input
+                  type="text"
+                  class="bg-black text-xl outline-none"
+                  placeholder="What is Happening?!"
+                />
+              </div>
+              <div
+                class="privacy flex cursor-pointer items-center gap-2 rounded-full px-1 hover:bg-blue-400/20"
+              >
+                <i
+                  class="fa-solid fa-earth-americas"
+                  style="color: #1d9bf0"
+                ></i>
+                <p class="text-[#1d9bf0]">Everyone can reply</p>
+              </div>
+              <div
+                class="post-buttons flex items-center justify-between border-t-[1px] border-gray-600 p-4 text-[#1d9bf0]"
+              >
+                <div class="buttons flex gap-1 md:gap-4">
+                  <span class="material-symbols-outlined"> imagesmode </span>
+                  <span class="material-symbols-outlined"> gif_box </span>
+                  <span class="material-symbols-outlined">
+                    format_list_bulleted
+                  </span>
+                  <span class="material-symbols-outlined">
+                    sentiment_satisfied
+                  </span>
+                  <span class="material-symbols-outlined">
+                    calendar_month
+                  </span>
+                  <span class="material-symbols-outlined"> location_on </span>
+                </div>
+                <div
+                  class="post-bitton cursor-pointer rounded-full bg-cyan-500 px-4 py-1 font-semibold text-white hover:bg-cyan-600"
+                >
+                  Post
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post flex border-b-2 border-gray-700 p-4">
+            <div class="logo">
+              <img
+                class="w-10 rounded-full"
+                src="assets/images/elon.jpg"
+                alt="elon"
+              />
+            </div>
+            <div class="content w-full px-2">
+              <div class="info flex justify-between">
+                <div class="id flex cursor-pointer gap-2">
+                  <span class="name hover:underline">Elon Musk</span>
+                  <span class="material-symbols-outlined text-[#1d9bf0]">
+                    verified
+                  </span>
+                  <span class="id text-gray-600">@elonMusk · 6h </span>
+                </div>
+                <div
+                  class="more flex cursor-pointer justify-center rounded-full px-2 hover:bg-blue-300/20"
+                >
+                  <span class="material-symbols-outlined hover:text-blue-300">
+                    more_horiz
+                  </span>
+                </div>
+              </div>
+              <div class="posting">This week, @xAI will open source Grok</div>
+              <div class="post-buttons mt-4 flex justify-between">
+                <span
+                  class="cursor-pointer rounded-full px-2 hover:bg-blue-300/20 hover:text-blue-300"
+                >
+                  <i class="fa-regular fa-comment"></i> 5.7K
+                </span>
+                <span
+                  class="cursor-pointer rounded-full px-2 hover:bg-green-400/20 hover:text-green-400"
+                >
+                  <i class="fa-solid fa-retweet"></i> 8.9K
+                </span>
+                <span
+                  class="cursor-pointer rounded-full px-2 hover:bg-red-400/20 hover:text-red-400"
+                >
+                  <i class="fa-regular fa-heart"></i> 57K
+                </span>
+                <span
+                  class="cursor-pointer rounded-full px-2 hover:bg-blue-300/20 hover:text-blue-300"
+                >
+                  <i class="fa-solid fa-chart-simple"></i> 12M
+                </span>
+                <div class="seprate-buttons flex gap-4">
+                  <span
+                    class="cursor-pointer rounded-full px-2 hover:bg-blue-300/20 hover:text-blue-300"
+                    ><i class="fa-regular fa-bookmark"></i
+                  ></span>
+                  <span
+                    class="cursor-pointer rounded-full px-2 hover:bg-blue-300/20 hover:text-blue-300"
+                    ><i class="fa-solid fa-arrow-up-from-bracket"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post flex border-b-2 border-gray-700 p-4">
+            <div class="logo">
+              <img
+                class="w-10 rounded-full"
+                src="assets/images/memedp.jpg"
+                alt="elon"
+              />
+            </div>
+            <div class="content w-full px-2">
+              <div class="info flex justify-between">
+                <div class="id flex cursor-pointer gap-2">
+                  <span class="name hover:underline">MEME_CODER</span>
+                  <span class="material-symbols-outlined text-[#1d9bf0]">
+                    verified
+                  </span>
+                  <span class="id text-gray-600">@memecoder · 8h </span>
+                </div>
+                <div
+                  class="more flex cursor-pointer justify-center rounded-full px-2 hover:bg-blue-300/20"
+                >
+                  <span class="material-symbols-outlined hover:text-blue-300">
+                    more_horiz
+                  </span>
+                </div>
+              </div>
+              <div class="posting">
+                <img
+                  src="assets/images/meme.jpeg"
+                  alt="meme"
+                  class="meme bottom-0 my-4 h-80 rounded-xl"
+                />
+              </div>
+              <div class="post-buttons mt-4 flex justify-between">
+                <span
+                  class="cursor-pointer rounded-full px-2 hover:bg-blue-300/20 hover:text-blue-300"
+                >
+                  <i class="fa-regular fa-comment"></i> 800
+                </span>
+                <span
+                  class="cursor-pointer rounded-full px-2 hover:bg-green-400/20 hover:text-green-400"
+                >
+                  <i class="fa-solid fa-retweet"></i> 100
+                </span>
+                <span
+                  class="cursor-pointer rounded-full px-2 hover:bg-red-400/20 hover:text-red-400"
+                >
+                  <i class="fa-regular fa-heart"></i> 1K
+                </span>
+                <span
+                  class="cursor-pointer rounded-full px-2 hover:bg-blue-300/20 hover:text-blue-300"
+                >
+                  <i class="fa-solid fa-chart-simple"></i> 1M
+                </span>
+                <div class="seprate-buttons flex gap-4">
+                  <span
+                    class="cursor-pointer rounded-full px-2 hover:bg-blue-300/20 hover:text-blue-300"
+                    ><i class="fa-regular fa-bookmark"></i
+                  ></span>
+                  <span
+                    class="cursor-pointer rounded-full px-2 hover:bg-blue-300/20 hover:text-blue-300"
+                    ><i class="fa-solid fa-arrow-up-from-bracket"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post flex border-b-2 border-gray-700 p-4">
+            <div class="logo">
+              <img
+                class="w-10 rounded-full"
+                src="assets/images/tailwind.jpg"
+                alt="elon"
+              />
+            </div>
+            <div class="content w-full px-2">
+              <div class="info flex justify-between">
+                <div class="id flex cursor-pointer gap-2">
+                  <span class="name hover:underline">Tailwind CSS</span>
+                  <span class="material-symbols-outlined text-[#1d9bf0]">
+                    verified
+                  </span>
+                  <span class="id text-gray-600">@tailwindcss · 12h </span>
+                </div>
+                <div
+                  class="more flex cursor-pointer justify-center rounded-full px-2 hover:bg-blue-300/20"
+                >
+                  <span class="material-symbols-outlined hover:text-blue-300">
+                    more_horiz
+                  </span>
+                </div>
+              </div>
+              <div class="posting">
+                ✨ We just released Commit — a brand new changelog template we
+                designed, built with Tailwind CSS and Next.js! Lots of nice
+                little details in this one, check out the live demo here 👉
+                <video
+                  class="my-4 rounded-xl"
+                  src="./assets/tailwindcss.mp4"
+                  autoplay
+                  controls
+                  muted
+                  loop
+                ></video>
+              </div>
+              <div class="post-buttons mt-4 flex justify-between">
+                <span
+                  class="cursor-pointer rounded-full px-2 hover:bg-blue-300/20 hover:text-blue-300"
+                >
+                  <i class="fa-regular fa-comment"></i> 2K
+                </span>
+                <span
+                  class="cursor-pointer rounded-full px-2 hover:bg-green-400/20 hover:text-green-400"
+                >
+                  <i class="fa-solid fa-retweet"></i> 1K
+                </span>
+                <span
+                  class="cursor-pointer rounded-full px-2 hover:bg-red-400/20 hover:text-red-400"
+                >
+                  <i class="fa-regular fa-heart"></i> 20K
+                </span>
+                <span
+                  class="cursor-pointer rounded-full px-2 hover:bg-blue-300/20 hover:text-blue-300"
+                >
+                  <i class="fa-solid fa-chart-simple"></i> 5M
+                </span>
+                <div class="seprate-buttons flex gap-4">
+                  <span
+                    class="cursor-pointer rounded-full px-2 hover:bg-blue-300/20 hover:text-blue-300"
+                    ><i class="fa-regular fa-bookmark"></i
+                  ></span>
+                  <span
+                    class="cursor-pointer rounded-full px-2 hover:bg-blue-300/20 hover:text-blue-300"
+                    ><i class="fa-solid fa-arrow-up-from-bracket"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="third hidden w-3/12 min-[1300px]:block">
+        <div class="sticky top-0 mx-2">
+          <div class="content flex flex-col items-center pt-2">
+            <div class="search-container sticky top-0 bg-black py-2">
+              <div
+                class="search w-80 rounded-full border-blue-400 bg-[#202225] px-4 focus-within:border focus-within:bg-black"
+              >
+                <i
+                  class="fa-solid fa-magnifying-glass"
+                  style="color: #71767b"
+                ></i>
+                <input
+                  class="rounded-full border-none bg-[#202225] py-2 pl-1 pr-20 outline-none focus-within:bg-black"
+                  type="text"
+                  placeholder="Search"
+                />
+              </div>
+            </div>
+            <div class="trending mt-6 w-80 rounded-2xl bg-[#202225]">
+              <h2 class="mb-4 py-2 pl-4 text-2xl font-bold">
+                What's Happening
+              </h2>
+              <div
+                class="topic mb-4 cursor-pointer py-2 pl-4 hover:bg-gray-800"
+              >
+                <p class="text-gray-600">Trending in India</p>
+                <p class="font-semibold">#MODI_JI</p>
+                <p class="text-gray-600">14.2K posts</p>
+              </div>
+              <div
+                class="topic mb-4 cursor-pointer py-2 pl-4 hover:bg-gray-800"
+              >
+                <p class="text-gray-600">Technology-Trending</p>
+                <p class="font-semibold">#AI</p>
+                <p class="text-gray-600">7K posts</p>
+              </div>
+              <div
+                class="topic mb-4 cursor-pointer py-2 pl-4 hover:bg-gray-800"
+              >
+                <p class="text-gray-600">Entertainment-Trending</p>
+                <p class="font-semibold">#KGF</p>
+                <p class="text-gray-600">5K posts</p>
+              </div>
+              <div
+                class="more mb-4 cursor-pointer py-2 pl-4 text-blue-500 hover:bg-gray-800"
+              >
+                Show More
+              </div>
+            </div>
+            <div class="follow mt-6 w-80 rounded-2xl bg-[#202225]">
+              <h2 class="mb-4 py-2 pl-4 text-2xl font-bold">Who to Follow</h2>
+              <div
+                class="channel mb-4 flex cursor-pointer items-center gap-4 py-2 pl-4 hover:bg-gray-800"
+              >
+                <span class="logo"
+                  ><img
+                    class="w-10 rounded-full"
+                    src="./assets/images/tailwind.jpg"
+                    alt="tailwind"
+                /></span>
+                <span class="name overflow-hidden">
+                  <p>Tailwind CSS</p>
+                  <p class="text-gray-600">@tailwindcss</p>
+                </span>
+                <span class="button"
+                  ><button
+                    class="rounded-full bg-white px-4 py-2 font-semibold text-black"
+                  >
+                    Follow
+                  </button></span
+                >
+              </div>
+              <div
+                class="channel mb-4 flex cursor-pointer items-center gap-4 py-2 pl-4 hover:bg-gray-800"
+              >
+                <span class="logo"
+                  ><img
+                    class="w-10 rounded-full"
+                    src="assets/images/node.jpg"
+                    alt="node"
+                /></span>
+                <span class="name overflow-hidden">
+                  <p>Node JS</p>
+                  <p class="text-gray-600">@nodejs</p>
+                </span>
+                <span class="button"
+                  ><button
+                    class="rounded-full bg-white px-4 py-2 font-semibold text-black"
+                  >
+                    Follow
+                  </button></span
+                >
+              </div>
+              <div
+                class="channel mb-4 flex cursor-pointer items-center gap-4 py-2 pl-4 hover:bg-gray-800"
+              >
+                <span class="logo"
+                  ><img
+                    class="w-10 rounded-full"
+                    src="./assets/images/react.png"
+                    alt="react"
+                /></span>
+                <span class="name overflow-hidden">
+                  <p>React JS</p>
+                  <p class="text-gray-600">@reactjs</p>
+                </span>
+                <span class="button"
+                  ><button
+                    class="rounded-full bg-white px-4 py-2 font-semibold text-black"
+                  >
+                    Follow
+                  </button></span
+                >
+              </div>
+              <div
+                class="more mb-4 cursor-pointer py-2 pl-4 text-blue-500 hover:bg-gray-800"
+              >
+                Show More
+              </div>
+            </div>
+          </div>
+          <div
+            class="links it flex flex-wrap justify-center gap-1 py-4 text-gray-600"
+          >
+            <a href="">Term of Service</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Cookie Policy</a>
+            <a href="">Accessibility</a>
+            <a href="">Ads Info</a>
+            <a href="">More</a>
+            <p>©️ 2024 X Corp.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
